@@ -15,7 +15,7 @@ const Skills = () => {
             </p>
           </div>
           <a href="/about">
-            <Button variant={"outline"}>
+            <Button variant={"link"}>
               View all skills
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,14 +35,14 @@ const Skills = () => {
             </Button>
           </a>
         </div>
-        <div className="grid grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-6">
+        <div className="grid grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-5">
           {technologies.map((technology) => (
             <div
-              key={technologies.id}
-              className="group flex flex-col items-center gap-2"
+              key={technology.id}
+              className="group flex flex-col items-center gap-2 border-2 border-gray/20 bg-[#18181B] py-5"
             >
-              <div className=" ring-border/50 flex h-16 w-16 items-center justify-center rounded-2xl ring-1 transition-colors hover:text-[#61DAFB] hover:shadow-lg">
-                {technologies.icon}
+              <div className="bg-gray/5  ring-gray/20 flex h-20 w-20 items-center justify-center  ring-1 transition-colors hover:text-[#61DAFB] hover:shadow-lg">
+                {technology.icon}
               </div>
               <span className="text-muted-foreground text-sm font-medium">
                 {technology.label}

@@ -1,17 +1,26 @@
+import Typography from "@/components/typography/Typography";
+import { Button } from "@/components/ui/button";
+
 const Blogs = () => {
   return (
-    <section className=" px-4 py-16">
+    <section className=" px-4 py-16 container mx-auto">
       <div className="mx-auto">
         <div className="mb-12 flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">
-            <h2 className="mb-4 text-3xl font-bold">Latest Blogs</h2>
+            <div className="space-y-3">
+              <p className="text-primary flex items-center gap-2 font-bold">
+                <span className="bg-primary block h-1 w-7" />
+                Blogs
+              </p>
+              <Typography variant="h2"> Latest Blogs</Typography>
+            </div>
             <p className="text-muted-foreground">
               Here are some of my latest blog posts where I share my thoughts,
               experiences, and tips on web development and programming.
             </p>
           </div>
           <a href="/blog">
-            <button className="focus-visible:ring-ring transition-standard border-input bg-background hover:bg-accent hover:text-accent-foreground group inline-flex h-10 items-center justify-center rounded-md border px-4 py-2 text-sm font-medium whitespace-nowrap shadow-sm transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50">
+            <Button variant="link">
               Explore More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,12 +37,12 @@ const Blogs = () => {
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
               </svg>
-            </button>
+            </Button>
           </a>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <a
-            className="group relative flex h-full flex-col overflow-hidden rounded-xl border transition-all duration-300 hover:shadow-xl"
+            className=" group relative cursor-pointer overflow-hidden   ring-1 ring-gray/20 hover:shadow-xl hover:ring-primary/50 transition-shadow duration-500"
             href="/blog/announcing-snip-ui"
           >
             <div className="relative h-48 overflow-hidden">
@@ -59,7 +68,7 @@ const Blogs = () => {
               />
             </div>
             <div className="flex flex-grow flex-col p-6">
-              <h3 className="group-hover:text-primary mb-3 line-clamp-2 text-xl font-semibold transition-colors">
+              <h3 className="group-hover:underline text-white mb-3 line-clamp-2 text-xl font-semibold transition-colors">
                 Introducing Snip UI: Open-Source Web Interface for Local LLMs
               </h3>
               <p className="text-muted-foreground mb-4 line-clamp-2 text-sm">
@@ -67,7 +76,7 @@ const Blogs = () => {
                 interacting with locally hosted Large Language Models seamless
                 and secure.
               </p>
-              <div className="mt-auto flex items-center justify-between border-t pt-4">
+              <div className="mt-auto flex items-center justify-between border-t pt-4 border-accent">
                 <p className="text-muted-foreground flex items-center gap-2 text-xs">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

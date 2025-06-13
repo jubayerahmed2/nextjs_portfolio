@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-4">
           <Link href="/hire-me">
-            <Button>
+            <Button variant="ghost">
               <EmailIcon size="size-5" />
               Hire Me
             </Button>

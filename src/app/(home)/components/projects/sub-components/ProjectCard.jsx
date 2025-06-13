@@ -3,7 +3,7 @@ import Typography from "@/components/typography/Typography";
 
 const ProjectCard = () => {
   return (
-    <div className=" group relative cursor-pointer overflow-hidden rounded-2xl  ring-1 ring-gray/20 hover:shadow-xl hover:ring-primary/50 transition-shadow duration-500">
+    <div className=" group relative cursor-pointer overflow-hidden   ring-1 ring-gray/20 hover:shadow-xl hover:ring-primary/50 transition-shadow duration-500">
       <div className="relative aspect-video w-full overflow-hidden">
         <img
           alt="Civen AI"

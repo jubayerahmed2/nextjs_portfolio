@@ -12,7 +12,7 @@ const ReactJS = () => {
         strokeWidth={0}
         role="img"
         viewBox="0 0 24 24"
-        className="h-8 w-8 transition-transform duration-300 group-hover:scale-110"
+        className={`h-8 w-8 transition-transform duration-300 group-hover:scale-110`}
         style={{ color: "#61DAFB" }}
         height="1em"
         width="1em"
