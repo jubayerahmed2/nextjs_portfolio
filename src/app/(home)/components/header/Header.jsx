@@ -11,7 +11,7 @@ const Header = () => {
           <a className="flex items-center gap-2.5" href="/">
             <span className="font-code font-bold text-white">jAhmed</span>
           </a>
-          <div className="hidden items-center gap-6 md:flex">
+          <div className="hidden items-center gap-6 md:flex uppercase">
             {navLinks.map((link) => (
               <Link
                 key={link.id}
