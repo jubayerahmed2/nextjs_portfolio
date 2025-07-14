@@ -15,7 +15,7 @@ const Header = () => {
             {navLinks.map((link) => (
               <Link
                 key={link.id}
-                className="text-gray hover:text-white text-sm font-medium transition-colors"
+                className="text-gray hover:text-white text-sm font-normal transition-colors"
                 href={link.href}
               >
                 {link.label}
@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-4">
           <Link href="/hire-me">
-            <Button variant="ghost">
+            <Button variant="ghost" className="gap-2">
               <EmailIcon size="size-5" />
               Hire Me
             </Button>

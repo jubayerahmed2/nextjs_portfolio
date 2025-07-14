@@ -3,7 +3,7 @@ import { technologies } from "@/constant";
 
 const Skills = () => {
   return (
-    <section className="px-4 py-20 text-white container mx-auto">
+    <section className="px-6 py-20 text-white container mx-auto ">
       <div className="space-y-8">
         <div className="mb-12 flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">
@@ -39,7 +39,7 @@ const Skills = () => {
           {technologies.map((technology) => (
             <div
               key={technology.id}
-              className="group flex flex-col items-center gap-2 border-2 border-gray/20 bg-[#18181B] py-5"
+              className="group flex flex-col items-center gap-2 border-2 border-gray/20 bg-[#18181b8e] py-5"
             >
               <div className="bg-gray/5  ring-gray/20 flex h-20 w-20 items-center justify-center  ring-1 transition-colors hover:text-[#61DAFB] hover:shadow-lg">
                 {technology.icon}

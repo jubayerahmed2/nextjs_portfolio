@@ -13,8 +13,9 @@ const ProjectCard = () => {
         />
       </div>
       <div className="p-6">
-        <Typography variant="h3">Civen AI</Typography>
-        <Typography variant="p" className="mt-2 line-clamp-2 ">
+        <div className="text-gray uppercase text-xs">webapp 2024</div>
+        <Typography variant="h4">Civen AI</Typography>
+        <Typography variant="p" className="mt-2 line-clamp-2  text-sm">
           Civen AI is a platform that allows you to create AI-powered cover
           letters that will help you get your dream job
         </Typography>

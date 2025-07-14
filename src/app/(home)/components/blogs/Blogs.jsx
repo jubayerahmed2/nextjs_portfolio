@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Blogs = () => {
   return (
-    <section className=" px-4 py-16 container mx-auto">
+    <section className=" px-6 py-16 container mx-auto ">
       <div className="mx-auto">
         <div className="mb-12 flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">

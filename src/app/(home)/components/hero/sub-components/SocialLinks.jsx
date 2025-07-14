@@ -2,7 +2,7 @@ import { socialLinks } from "@/constant";
 
 const SocialLinks = () => {
   return (
-    <ul className="flex items-center gap-4 pt-7">
+    <ul className="flex items-center gap-4 pt-3">
       {socialLinks.map((link) => (
         <li key={link.id}>
           <a

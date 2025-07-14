@@ -24,18 +24,18 @@ const About = () => {
                     </Typography>
 
                     <div className="space-y-6 text-lg md:text-xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed max-w-3xl mx-auto animate-in fade-in duration-700 delay-400">
-                      <p>
+                      <Typography variant="p" className="">
                         MERN and Next.js Developer with hands-on experience in
                         DevOps, cloud platforms like AWS and Cloudflare, and a
                         strong foundation in full-stack development.
-                      </p>
-                      <p>
+                      </Typography>
+                      <Typography variant="p" className="">
                         3+ years of expertise in UI/UX design and two year of
                         full-stack development, collaborating with clients to
                         deliver high-quality projects. Adept at deploying,
                         managing, and scaling applications using Vercel,
                         Cloudflare Pages, and AWS.
-                      </p>
+                      </Typography>
                     </div>
                   </div>
                   <div className="absolute bottom-8 left-8 opacity-20 dark:opacity-30">
