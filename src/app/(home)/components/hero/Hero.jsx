@@ -15,8 +15,11 @@ const HeroSection = () => {
               Open to Work & Collaborations
             </p>
           </div>
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
-            <span className="text-primary">Jubayer Ahmed</span>
+          <h1 className="text-3xl   md:text-4xl lg:text-6xl">
+            <span className="text-primary">
+              <span className="font-light">Jubayer</span> <br />{" "}
+              <em className="font-serif font-semibold">Ahmed</em>
+            </span>
           </h1>
           <div className="relative">
             <p className="text-lg font-medium tracking-wide text-gray-200 md:text-xl">
@@ -49,15 +52,23 @@ const HeroSection = () => {
             height={500}
             width={500}
           />
-          <div className="rounded-full border-primary hover:border-secondary relative h-64 w-64 transform overflow-hidden border-8 shadow-xl transition-all duration-300 hover:scale-105 lg:h-96 lg:w-96">
-            <div className="from-primary/30 absolute inset-0 z-10 bg-gradient-to-tr to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100" />
-            <Image
-              alt="Jubayer Ahmed Profile"
-              className="h-full w-full object-cover absolute left-0 right-0 top-0 bottom-0 text-transparent"
-              src={profile}
-              height={500}
-              width={500}
-            />
+          <div className="relative">
+            <div className=" flex justify-center items-center gap-1 text-xs top-8 -left-6 bg-accent px-4 py-2 border border-gray/20 uppercase absolute z-50 text-white">
+              <span className="text-[8px]">⬜</span> FrontEnd
+            </div>
+            <div className=" flex justify-center items-center gap-1 text-xs bottom-4 -right-6 bg-accent px-4 py-2 border border-gray/20 uppercase absolute z-50 text-white">
+              <span className="text-[8px]">⬜</span> BackEnd
+            </div>
+            <div className="h-64 w-64 transform overflow-hidden rounded-full sm:rounded-none  shadow-xl transition-all duration-300  lg:h-96 lg:w-96 ">
+              <div className="from-accent/40  absolute inset-0 z-10 bg-gradient-to-tr to-transparent opacity-100 transition-opacity duration-300 hover:opacity-0" />
+              <Image
+                alt="Jubayer Ahmed Profile"
+                className=" h-full w-full object-cover absolute left-0 right-0 top-0 bottom-0 text-transparent"
+                src={profile}
+                height={500}
+                width={500}
+              />
+            </div>
           </div>
         </div>
       </div>
