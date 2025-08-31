@@ -1,4 +1,11 @@
-import { Blogs, Footer, HeroSection, Projects, Skills } from "./index";
+import {
+  Blogs,
+  ContactSection,
+  Footer,
+  HeroSection,
+  Projects,
+  Skills,
+} from "./index";
 
 export default function Home() {
   return (
@@ -7,6 +14,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Blogs />
+      <ContactSection />
       <Footer />
     </>
   );

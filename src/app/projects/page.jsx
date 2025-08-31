@@ -29,34 +29,6 @@ const Projects = () => {
                       represents a unique challenge solved through thoughtful
                       design and engineering.
                     </p>
-                    <div className="animate-in fade-in flex flex-wrap items-center justify-center gap-12 text-center delay-700 duration-700">
-                      <div className="space-y-1">
-                        <div className="font-mono text-2xl font-light text-zinc-900 dark:text-zinc-100">
-                          15+
-                        </div>
-                        <div className="font-mono text-sm tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
-                          Projects
-                        </div>
-                      </div>
-                      <div className="h-8 w-px bg-zinc-300 dark:bg-zinc-700" />
-                      <div className="space-y-1">
-                        <div className="font-mono text-2xl font-light text-zinc-900 dark:text-zinc-100">
-                          3+
-                        </div>
-                        <div className="font-mono text-sm tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
-                          Years
-                        </div>
-                      </div>
-                      <div className="h-8 w-px bg-zinc-300 dark:bg-zinc-700" />
-                      <div className="space-y-1">
-                        <div className="font-mono text-2xl font-light text-zinc-900 dark:text-zinc-100">
-                          ∞
-                        </div>
-                        <div className="font-mono text-sm tracking-wide text-zinc-500 uppercase dark:text-zinc-400">
-                          Learning
-                        </div>
-                      </div>
-                    </div>
                   </div>
                   <div className="absolute bottom-8 left-8 opacity-20 dark:opacity-30">
                     <div className="h-4 w-4 rotate-45 border border-zinc-400 dark:border-zinc-600" />

@@ -1,10 +1,13 @@
+"use client";
+
 import Typography from "@/components/typography/Typography";
 import { Button } from "@/components/ui/button";
+import { projects } from "@/constant";
 import ProjectCard from "./sub-components/ProjectCard";
 
 const Projects = () => {
   return (
-    <section className="container space-y-10 py-16 mx-auto px-6" id="services">
+    <section className=" space-y-10 py-16 mx-auto px-6" id="services">
       <div className="space-y-3">
         <p className="text-primary flex items-center gap-2 font-bold">
           <span className="bg-primary block h-1 w-7" />
@@ -13,9 +16,9 @@ const Projects = () => {
         <Typography variant="h2">What projects I've build?</Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects.map((project) => (
+          <ProjectCard key={project.title} project={project} />
+        ))}
       </div>
       <div className="flex justify-center  -mt-5">
         <Button variant={"link"} className="text-white ">

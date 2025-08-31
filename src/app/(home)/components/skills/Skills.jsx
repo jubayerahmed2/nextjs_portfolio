@@ -3,7 +3,7 @@ import { technologies } from "@/constant";
 
 const Skills = () => {
   return (
-    <section className="px-6 py-20 text-white container mx-auto ">
+    <section className="px-6 py-20 text-white mx-auto ">
       <div className="space-y-8">
         <div className="mb-12 flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-2xl">

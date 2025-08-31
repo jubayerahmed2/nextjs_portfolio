@@ -60,9 +60,6 @@ const Blogs = () => {
                           <div className="relative aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
                             <img
                               alt="AI-Powered IDEs: Exploring Modern Coding with Trae, Cursor, Windsurf, and Pear"
-                              loading="lazy"
-                              decoding="async"
-                              data-nimg="fill"
                               className="object-cover transition-transform duration-700 group-hover:scale-105"
                               style={{
                                 position: "absolute",
@@ -74,8 +71,6 @@ const Blogs = () => {
                                 bottom: 0,
                                 color: "transparent",
                               }}
-                              sizes="100vw"
-                              srcSet="/_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=640&q=75 640w, /_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=750&q=75 750w, /_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=828&q=75 828w, /_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=1080&q=75 1080w, /_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=1200&q=75 1200w, /_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=1920&q=75 1920w, /_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=2048&q=75 2048w, /_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=3840&q=75 3840w"
                               src="/_next/image?url=%2Fblogs%2Fexploring-ai-powered-ides.webp&w=3840&q=75"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

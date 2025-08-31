@@ -2,11 +2,11 @@ import { grid, profile } from "@/assets/index";
 import Typography from "@/components/typography/Typography";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import SocialLinks from "./sub-components/SocialLinks";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="container pt-16 mx-auto px-6">
+    <div className="px-6 pt-16 mx-auto ">
       <div className="flex flex-col-reverse items-center justify-between gap-8 pb-16 lg:flex-row">
         <div className="flex w-full flex-col gap-6 py-6 lg:w-1/2">
           <div className="inline-flex w-fit items-center gap-2  bg-gray-800/50 px-4 py-2 backdrop-blur-sm">
@@ -21,27 +21,37 @@ const HeroSection = () => {
               <em className="font-serif font-semibold">Ahmed</em>
             </span>
           </h1>
-          <div className="relative">
+          {/* <div className="relative">
             <p className="text-lg font-medium tracking-wide text-gray-200 md:text-xl">
-              Front-end Developer
+              Back-end Developer
             </p>
             <div className="from-primary absolute -bottom-2 left-0 h-px w-24 bg-gradient-to-r to-transparent" />
-          </div>
+          </div> */}
           <Typography variant="p" className="text-lg">
-            Web Developer building modern applications with Next.js, TypeScript,
-            and React. Currently learning backend technologies and focusing on
-            creating functional, accessible web experiences.
+            Passionate Backend Developer, Tech Enthusiast and spiritual guy from
+            Bangladesh. I mostly deal with web development with
+            HTML5/CSS/Javascript, React and NodeJS, software development stack
+            in these days.
           </Typography>
-          <SocialLinks />
-          <div className="mt-4 flex flex-col items-start gap-6 md:flex-row md:items-center">
-            <Button className="flex gap-3 " variant="ghost">
-              Let's Collaborate
-            </Button>
-            <Button variant="outline" className="flex gap-3 ">
-              {" "}
-              <span className="font-medium text-white">Download Resume</span>
-              {/* <DownloadIcon /> */}
-            </Button>
+          {/* <SocialLinks /> */}
+          <div className="mt-4 flex items-start gap-6 md:flex-row md:items-center">
+            <Link href="#contact">
+              <Button className="flex gap-3 " variant="ghost">
+                Let's Collaborate
+              </Button>
+            </Link>
+            <Link
+              href={
+                "https://drive.google.com/file/d/1RvURePecIbzDP_XGoS57zq7s5CPz-BEb/view?usp=sharing"
+              }
+              target="_blank"
+            >
+              <Button variant="outline" className="flex gap-3 ">
+                {" "}
+                <span className="font-medium text-white">View Resume</span>
+                {/* <DownloadIcon /> */}
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="my-8 flex w-full items-center justify-center lg:w-1/2 relative">
